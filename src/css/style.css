@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    /* position: fixed; */
+    top: 50px;
+    left: 10px;
+    /* box-u bir yerde saxlamaq ucun istifade olunur */
+
+}
+
+.bannerImg {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.bannerImg img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.bannerImg .bannerIcon {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.bannerImg .bannerIcon i {
+    font-size: 2.2em;
+    color: white;
+}
+
+.bannerImg .bannerIcon .fullHeart {
+    position: absolute;
+    top: 9px;
+    left: 11px;
+}
+
+.bannerImg .bannerIcon .fullHeart i {
+    color: red;
+    font-size: 0.8em;
+}
+
+/* Eger child-lari varsa hemin absolute parentine gore hereket edecek.*/
+/* Yox eger, child-inin child-i varsa, her child oz parentine gore hereket edecek */
+
+#about {
+    padding: 20px 60px;
+}
+
+#about p {
+    max-width: 600px;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+/* --------------------Z-Index---------------------*/
+
+#dataOver {
+    margin: 500px 20px;
+}
+
+#dataOver .mainImg {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+}
+
+#dataOver .mainImg  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#dataOver .mainImg .img2 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 150px;
+    right: 230px;
+    z-index: 4;
+   
+}
+
+#dataOver .mainImg .img3 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 150px;
+    left: 230px;
+    z-index: -2;
+}
+
+/* -----------Overflow----------- */
+
+/* IBizim datalarimiz, textlerimiz dasanda overflow istifade edirik */
+
+
+.flow_img {
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    border: 1px solid black;
+    
+    /* overflow: hidden; */
+    /* div-in olcusu qederini gosterir */
+
+    /* overflow: visible; */
+    /* default gosterir */
+
+    /* overflow: scroll; */
+    /* scroll yaradir eger x oxu uzrede varsa gosterir */
+
+    /* overflow-y: scroll;
+    overflow-x: scroll; */
+    /* kankret istediyimiz yerden scroll atiriq */
+    
+    /* overflow: auto; */
+    /* auto yigir */
+
+    overflow-y: scroll;
+
+}   
+
+.flow_img img {
+    width: 100%;
+}
